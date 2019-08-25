@@ -1,12 +1,13 @@
 import React from 'react';
 // import hackathon from './images/hackathon.jpg';
 import './css/ViewProject.css';
+import { Switch, Route, Link } from 'react-router-dom';
+import ProjectDashboard from './ProjectDashboard';
 
 function ViewProject() {
   return (
     <div class="view-project">
       <Switch>
-        <Route exact path='/' component={Home}/>
         <Route path='/project-dashboard' component={ProjectDashboard}/>
         <Route path='/view-project' component={ViewProject}/>
       </Switch>

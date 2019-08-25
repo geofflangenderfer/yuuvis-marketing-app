@@ -3,7 +3,7 @@ import hackathon from './images/hackathon.jpg';
 import location from './images/location.png';
 import search from './images/search.png';
 import './css/ProjectDashboard.css';
-import { Link } from "react-router-dom";
+import { Switch, Route, Link } from "react-router-dom";
 import ViewProject from './ViewProject';
 //import ProjectDashboard from './project-dashboard';
 
@@ -11,7 +11,6 @@ function ProjectDashboard() {
   return (
     <div className="project-dashboard">
       <Switch>
-        <Route exact path='/' component={Home}/>
         <Route path='/project-dashboard' component={ProjectDashboard}/>
         <Route path='/view-project' component={ViewProject}/>
       </Switch>
@@ -103,86 +102,75 @@ function ProjectDashboard() {
           </div>
         </div>
 
-          <div className="project-card-container">
-            <div className="project-card-holder">
-                <div className="project-card">
-                  <Link to="/project1">
-                    <img src={hackathon} />
-                  </Link>
-                  <h3>Project Title</h3>
-                  <p>This is the project description. Here we can show a preview of what the text will look like, and what kind of files users can expect.</p>
-                  <p>
-                    <span>Austin, TX</span>
-                    <span>Galvanize</span>
-                  </p>
-                </div>
-
-              <Link to="./view-project.js">
-                <div className="project-card">
-                  <img src={hackathon} />
-                  <h3>Project Title</h3>
-                  <p>This is the project description. Here we can show a preview of what the text will look like, and what kind of files users can expect.</p>
-                  <p>
-                    <span>Austin, TX</span>
-                    <span>Galvanize</span>
-                  </p>
-                </div>
-              </Link>
-
-              <Link to="./view-project.js">
-                <div className="project-card">
-                  <img src={hackathon} />
-                  <h3>Project Title</h3>
-                  <p>This is the project description. Here we can show a preview of what the text will look like, and what kind of files users can expect.</p>
-                  <p>
-                    <span>Austin, TX</span>
-                    <span>Galvanize</span>
-                  </p>
-                </div>
-              </Link>
-
-              <Link to="./view-project.js">
-                <div className="project-card-holder">
-                  <div className="project-card">
-                    <img src={hackathon} />
-                    <h3>Project Title</h3>
-                    <p>This is the project description. Here we can show a preview of what the text will look like, and what kind of files users can expect.</p>
-                    <p>
-                      <span>Austin, TX</span>
-                      <span>Galvanize</span>
-                    </p>
-                  </div>
-                </div>
-              </Link>
-
-              <Link to="./view-project.js">
-                <div className="project-card">
-                  <img src={hackathon} />
-                  <h3>Project Title</h3>
-                  <p>This is the project description. Here we can show a preview of what the text will look like, and what kind of files users can expect.</p>
-                  <p>
-                    <span>Austin, TX</span>
-                    <span>Galvanize</span>
-                  </p>
-                </div>
-              </Link>
-
-              <Link to="./view-project.js">
-                <div className="project-card">
-                  <img src={hackathon} />
-                  <h3>Project Title</h3>
-                  <p>This is the project description. Here we can show a preview of what the text will look like, and what kind of files users can expect.</p>
-                  <p>
-                    <span>Austin, TX</span>
-                    <span>Galvanize</span>
-                  </p>
-                </div>
-              </Link>
-
+        <div class="project-card-container">
+        <div class="project-card-holder">
+          <a href="/view-project.html">
+            <div class="project-card">
+              <img src="https://cdn.glitch.com/8cbb4938-d2d3-48ec-afcd-12972292968a%2FOnline-Courts-Hackathon-Team-777x440.jpg?v=1566676851861" />
+              <h3>Project Title</h3>
+              <p>This is the project description. Here we can show a preview of what the text will look like, and what kind of files users can expect.</p>
+              <p>
+                <span>Austin, TX</span>
+                <span>Galvanize</span>
+              </p>
             </div>
+          </a>
+
+          <div class="project-card">
+            <img src="https://cdn.glitch.com/8cbb4938-d2d3-48ec-afcd-12972292968a%2FOnline-Courts-Hackathon-Team-777x440.jpg?v=1566676851861" />
+            <h3>Project Title</h3>
+            <p>This is the project description. Here we can show a preview of what the text will look like, and what kind of files users can expect.</p>
+            <p>
+              <span>Austin, TX</span>
+              <span>Galvanize</span>
+            </p>
+          </div>
+
+          <div class="project-card">
+            <img src="https://cdn.glitch.com/8cbb4938-d2d3-48ec-afcd-12972292968a%2FOnline-Courts-Hackathon-Team-777x440.jpg?v=1566676851861" />
+            <h3>Project Title</h3>
+            <p>This is the project description. Here we can show a preview of what the text will look like, and what kind of files users can expect.</p>
+            <p>
+              <span>Austin, TX</span>
+              <span>Galvanize</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card-holder">
+          <div class="project-card">
+            <img src="https://cdn.glitch.com/8cbb4938-d2d3-48ec-afcd-12972292968a%2FOnline-Courts-Hackathon-Team-777x440.jpg?v=1566676851861" />
+            <h3>Project Title</h3>
+            <p>This is the project description. Here we can show a preview of what the text will look like, and what kind of files users can expect.</p>
+            <p>
+              <span>Austin, TX</span>
+              <span>Galvanize</span>
+            </p>
+          </div>
+
+          <div class="project-card">
+            <img src="https://cdn.glitch.com/8cbb4938-d2d3-48ec-afcd-12972292968a%2FOnline-Courts-Hackathon-Team-777x440.jpg?v=1566676851861" />
+            <h3>Project Title</h3>
+            <p>This is the project description. Here we can show a preview of what the text will look like, and what kind of files users can expect.</p>
+            <p>
+              <span>Austin, TX</span>
+              <span>Galvanize</span>
+            </p>
+          </div>
+
+          <div class="project-card">
+            <img src="https://cdn.glitch.com/8cbb4938-d2d3-48ec-afcd-12972292968a%2FOnline-Courts-Hackathon-Team-777x440.jpg?v=1566676851861" />
+            <h3>Project Title</h3>
+            <p>This is the project description. Here we can show a preview of what the text will look like, and what kind of files users can expect.</p>
+            <p>
+              <span>Austin, TX</span>
+              <span>Galvanize</span>
+            </p>
           </div>
         </div>
       </div>
+          </div>
+        </div>
   );
 }
 
