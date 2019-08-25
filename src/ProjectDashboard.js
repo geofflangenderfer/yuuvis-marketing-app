@@ -140,7 +140,7 @@ function ProjectDashboard() {
                   </p>
                 </div>
               </Link>
-
+            </div>
 
               <div className="project-card-holder">
                 <Link to="./view-project.js">
@@ -183,7 +183,6 @@ function ProjectDashboard() {
             </div>
           </div>
         </div>
-      </div>
   );
 }
 
