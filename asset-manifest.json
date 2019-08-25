@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/yuuvis-marketing-app/static/css/main.dc6d572f.chunk.css",
+    "main.js": "/yuuvis-marketing-app/static/js/main.22b46ea4.chunk.js",
+    "main.js.map": "/yuuvis-marketing-app/static/js/main.22b46ea4.chunk.js.map",
+    "runtime~main.js": "/yuuvis-marketing-app/static/js/runtime~main.04120b3a.js",
+    "runtime~main.js.map": "/yuuvis-marketing-app/static/js/runtime~main.04120b3a.js.map",
+    "static/js/2.9faeca98.chunk.js": "/yuuvis-marketing-app/static/js/2.9faeca98.chunk.js",
+    "static/js/2.9faeca98.chunk.js.map": "/yuuvis-marketing-app/static/js/2.9faeca98.chunk.js.map",
+    "index.html": "/yuuvis-marketing-app/index.html",
+    "precache-manifest.c8d0a1ca1444382cacab792d8ff8a5ae.js": "/yuuvis-marketing-app/precache-manifest.c8d0a1ca1444382cacab792d8ff8a5ae.js",
+    "service-worker.js": "/yuuvis-marketing-app/service-worker.js",
+    "static/css/main.dc6d572f.chunk.css.map": "/yuuvis-marketing-app/static/css/main.dc6d572f.chunk.css.map",
+    "static/media/hackathon.jpg": "/yuuvis-marketing-app/static/media/hackathon.db1a9e5a.jpg"
+  }
+}
