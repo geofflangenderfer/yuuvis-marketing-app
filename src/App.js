@@ -1,15 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import ProjectDashboard from './project-dashboard.js';
-import ViewProject from './view-project';
+import ProjectDashboard from './ProjectDashboard';
+import ViewProject from './ViewProject';
 import { HashRouter, Route } from 'react-router-dom';
 
 function App() {
     return ( 
         <HashRouter>
             <Route exact path='/' component={ProjectDashboard} />
-            <Route path='/addproject/:projectId' component={ViewProject} />
+            <Route path='/:projectId' component={ViewProject} />
         </HashRouter>
     );
 }

@@ -1,10 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './css/index.css';
 import App from './App';
-import ProjectDashboard from './project-dashboard.js';
 import * as serviceWorker from './serviceWorker';
-import { Router } from 'react-router-dom';
 
 
 ReactDOM.render(
