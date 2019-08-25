@@ -141,8 +141,9 @@ function ProjectDashboard() {
                 </div>
               </Link>
 
-              <Link to="./view-project.js">
-                <div className="project-card-holder">
+
+              <div className="project-card-holder">
+                <Link to="./view-project.js">
                   <div className="project-card">
                     <img src={hackathon} />
                     <h3>Project Title</h3>
@@ -152,8 +153,8 @@ function ProjectDashboard() {
                       <span>Galvanize</span>
                     </p>
                   </div>
-                </div>
-              </Link>
+                </Link>
+
 
               <Link to="./view-project.js">
                 <div className="project-card">
@@ -178,7 +179,7 @@ function ProjectDashboard() {
                   </p>
                 </div>
               </Link>
-
+              </div>
             </div>
           </div>
         </div>
