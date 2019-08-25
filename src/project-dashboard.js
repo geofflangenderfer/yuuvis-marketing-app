@@ -3,15 +3,14 @@ import hackathon from './images/hackathon.jpg';
 import location from './images/location.png';
 import search from './images/search.png';
 import './project-dashboard.css';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import ViewProject from './view-project';
-import ProjectDashboard from './project-dashboard';
+//import ProjectDashboard from './project-dashboard';
 
 function ProjectDashboard() {
   return (
     <div>
       <Switch>
-        <Route exact path='/' component={Home}/>
         <Route path='/project-dashboard' component={ProjectDashboard}/>
         <Route path='/view-project' component={ViewProject}/>
       </Switch>
@@ -103,17 +102,17 @@ function ProjectDashboard() {
 
           <div className="project-card-container">
             <div className="project-card-holder">
-              <Link to="./view-project.js">
                 <div className="project-card">
                   <img src={hackathon} />
-                  <h3>Project Title</h3>
+                  <Link to="/addproject/project1">  
+                    <h3>Project Title</h3>
+                  </Link>  
                   <p>This is the project description. Here we can show a preview of what the text will look like, and what kind of files users can expect.</p>
                   <p>
                     <span>Austin, TX</span>
                     <span>Galvanize</span>
                   </p>
                 </div>
-              </Link>
 
 
               <div className="project-card">
