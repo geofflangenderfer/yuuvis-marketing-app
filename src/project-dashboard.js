@@ -6,7 +6,7 @@ import './project-dashboard.css';
 
 function ProjectDashboard() {
   return (
-    <div id="project-dashboard">
+    <div>
       <div class="input-bar">
         <div>
           <img className="category-icon" src={search} />
@@ -17,6 +17,7 @@ function ProjectDashboard() {
           <input className="location" type="text" name="firstname" placeholder="Choose Location" />
         </div>
         <input className="submit-button" type="submit" />
+        <input class="add-button" type="button" value="+"/>
       </div>
 
       <div className="main-content">
