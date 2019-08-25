@@ -5,9 +5,19 @@ import './view-project.css';
 function ViewProject() {
   return (
     <div class="view-project">
+      <Switch>
+        <Route exact path='/' component={Home}/>
+        <Route path='/project-dashboard' component={ProjectDashboard}/>
+        <Route path='/view-project' component={ViewProject}/>
+      </Switch>
       <div class="heading-area">
         <h1>Yuuvis Austin Hackathon</h1>
-        <input type="button" value="Edit" class="edit-button"/>
+        <Link to="./add-project.js">
+          <input type="button" value="Edit" class="edit-button"/>
+        </Link>
+        <Link to="./project-dashboard.js">
+          <input type="button" value="Dashboard" class="edit-button"/>
+        </Link>
       </div>
       <div class="whitebg">
         <h2>

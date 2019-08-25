@@ -37,7 +37,9 @@
 
 /* All styles */
 
-body {
+.add-project,
+.view-project,
+.project-dashboard {
   font-family: 'Montserrat', sans-serif;
   padding: 20px;
   background: rgba(190, 206, 238, .28);

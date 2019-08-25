@@ -9,7 +9,7 @@ import ProjectDashboard from './project-dashboard';
 
 function ProjectDashboard() {
   return (
-    <div>
+    <div className="project-dashboard">
       <Switch>
         <Route exact path='/' component={Home}/>
         <Route path='/project-dashboard' component={ProjectDashboard}/>
@@ -25,7 +25,9 @@ function ProjectDashboard() {
           <input className="location" type="text" name="firstname" placeholder="Choose Location" />
         </div>
         <input className="submit-button" type="submit" />
-        <input class="add-button" type="button" value="+"/>
+        <Link to="./add-project.js">
+          <input class="add-button" type="button" value="+"/>
+        </Link>
       </div>
 
       <div className="main-content">
@@ -115,58 +117,68 @@ function ProjectDashboard() {
                 </div>
               </Link>
 
+              <Link to="./view-project.js">
+                <div className="project-card">
+                  <img src={hackathon} />
+                  <h3>Project Title</h3>
+                  <p>This is the project description. Here we can show a preview of what the text will look like, and what kind of files users can expect.</p>
+                  <p>
+                    <span>Austin, TX</span>
+                    <span>Galvanize</span>
+                  </p>
+                </div>
+              </Link>
 
-              <div className="project-card">
-                <img src={hackathon} />
-                <h3>Project Title</h3>
-                <p>This is the project description. Here we can show a preview of what the text will look like, and what kind of files users can expect.</p>
-                <p>
-                  <span>Austin, TX</span>
-                  <span>Galvanize</span>
-                </p>
-              </div>
+              <Link to="./view-project.js">
+                <div className="project-card">
+                  <img src={hackathon} />
+                  <h3>Project Title</h3>
+                  <p>This is the project description. Here we can show a preview of what the text will look like, and what kind of files users can expect.</p>
+                  <p>
+                    <span>Austin, TX</span>
+                    <span>Galvanize</span>
+                  </p>
+                </div>
+              </Link>
 
-              <div className="project-card">
-                <img src={hackathon} />
-                <h3>Project Title</h3>
-                <p>This is the project description. Here we can show a preview of what the text will look like, and what kind of files users can expect.</p>
-                <p>
-                  <span>Austin, TX</span>
-                  <span>Galvanize</span>
-                </p>
-              </div>
-            </div>
+              <Link to="./view-project.js">
+                <div className="project-card-holder">
+                  <div className="project-card">
+                    <img src={hackathon} />
+                    <h3>Project Title</h3>
+                    <p>This is the project description. Here we can show a preview of what the text will look like, and what kind of files users can expect.</p>
+                    <p>
+                      <span>Austin, TX</span>
+                      <span>Galvanize</span>
+                    </p>
+                  </div>
+                </div>
+              </Link>
 
-            <div className="project-card-holder">
-              <div className="project-card">
-                <img src={hackathon} />
-                <h3>Project Title</h3>
-                <p>This is the project description. Here we can show a preview of what the text will look like, and what kind of files users can expect.</p>
-                <p>
-                  <span>Austin, TX</span>
-                  <span>Galvanize</span>
-                </p>
-              </div>
+              <Link to="./view-project.js">
+                <div className="project-card">
+                  <img src={hackathon} />
+                  <h3>Project Title</h3>
+                  <p>This is the project description. Here we can show a preview of what the text will look like, and what kind of files users can expect.</p>
+                  <p>
+                    <span>Austin, TX</span>
+                    <span>Galvanize</span>
+                  </p>
+                </div>
+              </Link>
 
-              <div className="project-card">
-                <img src={hackathon} />
-                <h3>Project Title</h3>
-                <p>This is the project description. Here we can show a preview of what the text will look like, and what kind of files users can expect.</p>
-                <p>
-                  <span>Austin, TX</span>
-                  <span>Galvanize</span>
-                </p>
-              </div>
+              <Link to="./view-project.js">
+                <div className="project-card">
+                  <img src={hackathon} />
+                  <h3>Project Title</h3>
+                  <p>This is the project description. Here we can show a preview of what the text will look like, and what kind of files users can expect.</p>
+                  <p>
+                    <span>Austin, TX</span>
+                    <span>Galvanize</span>
+                  </p>
+                </div>
+              </Link>
 
-              <div className="project-card">
-                <img src={hackathon} />
-                <h3>Project Title</h3>
-                <p>This is the project description. Here we can show a preview of what the text will look like, and what kind of files users can expect.</p>
-                <p>
-                  <span>Austin, TX</span>
-                  <span>Galvanize</span>
-                </p>
-              </div>
             </div>
           </div>
         </div>

@@ -1,0 +1,53 @@
+.add-project {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.add-project-text {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px 0px rgba(150, 150, 150, 0.2);
+  width: 100%;
+  border: 0;
+}
+
+.add-project-text::-webkit-input-placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #adadad;
+}
+
+.add-project-button {
+  background: #98d89a;
+  border: 0;
+  color: white;
+  font-size: 33px;
+  height: 52px;
+  width: 112px;
+  border-radius: 8px;
+  margin: 0 auto;
+  display: block;
+}
+
+.add-project-whitebg {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 40px;
+  box-shadow: 0px 0px 15px 0px rgba(150, 150, 150, 0.2);
+  width: 100%;
+}
+
+.submit-button-view {
+  background: #98B7FB;
+  color: white;
+  width: 350px;
+  border: 0;
+  height: 52px;
+  padding: 0;
+  font-size: 18px;
+  border-radius: 8px;
+  display: block;
+  margin: 40px auto 0 auto;
+}
