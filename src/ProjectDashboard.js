@@ -3,7 +3,7 @@ import hackathon from './images/hackathon.jpg';
 import location from './images/location.png';
 import search from './images/search.png';
 import './css/ProjectDashboard.css';
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ViewProject from './ViewProject';
 //import ProjectDashboard from './project-dashboard';
 
