@@ -2,10 +2,10 @@ import React from 'react';
 import hackathon from './images/hackathon.jpg';
 import location from './images/location.png';
 import search from './images/search.png';
-import './project-dashboard.css';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import ViewProject from './view-project';
-import ProjectDashboard from './project-dashboard';
+import './css/ProjectDashboard.css';
+import { Link } from "react-router-dom";
+import ViewProject from './ViewProject';
+//import ProjectDashboard from './project-dashboard';
 
 function ProjectDashboard() {
   return (
@@ -105,9 +105,10 @@ function ProjectDashboard() {
 
           <div className="project-card-container">
             <div className="project-card-holder">
-              <Link to="./view-project.js">
                 <div className="project-card">
-                  <img src={hackathon} />
+                  <Link to="/project1">
+                    <img src={hackathon} />
+                  </Link>
                   <h3>Project Title</h3>
                   <p>This is the project description. Here we can show a preview of what the text will look like, and what kind of files users can expect.</p>
                   <p>
@@ -115,7 +116,6 @@ function ProjectDashboard() {
                     <span>Galvanize</span>
                   </p>
                 </div>
-              </Link>
 
               <Link to="./view-project.js">
                 <div className="project-card">

@@ -1,6 +1,6 @@
 import React from 'react';
 // import hackathon from './images/hackathon.jpg';
-import './view-project.css';
+import './css/ViewProject.css';
 
 function ViewProject() {
   return (
